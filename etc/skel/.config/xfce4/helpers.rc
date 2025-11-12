@@ -1,0 +1,5 @@
+MailReader=thunderbird
+FileManager=Thunar
+TerminalEmulator=kitty
+
+WebBrowser=brave-browser

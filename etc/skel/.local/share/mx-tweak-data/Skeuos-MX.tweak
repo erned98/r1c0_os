@@ -1,0 +1,11 @@
+Name=Skeuos-MX
+background-style=0
+background-rgba=none
+background-image=none
+xsettings_gtk_theme=Skeuos-Blue-Dark
+xsettings_icon_theme=Flat-Remix-Yellow-Dark
+xfwm4_window_decorations=Skeuos-White-Dark-XFWM
+CursorThemeName=Adwaita
+<begin_gtk_whisker_theme_code>
+
+<end_gtk_whisker_theme_code>

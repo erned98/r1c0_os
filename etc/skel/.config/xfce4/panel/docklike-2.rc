@@ -1,0 +1,12 @@
+[user]
+pinned=thunar;org.xfce.mousepad;brave-browser;kitty;
+indicatorStyle=0
+inactiveIndicatorStyle=2
+indicatorOrientation=0
+indicatorColor=rgb(255,255,255)
+inactiveColor=rgb(255,255,255)
+forceIconSize=true
+iconSize=24
+noWindowsListIfSingle=true
+showWindowCount=false
+keyComboActive=true

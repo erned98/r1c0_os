@@ -1,0 +1,44 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<channel name="xfce4-desktop" version="1.0">
+  <property name="backdrop" type="empty">
+    <property name="single-workspace-mode" type="bool" value="true"/>
+    <property name="single-workspace-number" type="int" value="0"/>
+    <property name="screen0" type="empty">
+      <property name="monitoreDP-1" type="empty">
+        <property name="workspace0" type="empty">
+          <property name="last-image" type="string" value="/usr/share/backgrounds/0015.jpg"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="color-style" type="int" value="0"/>
+        </property>
+      </property>
+    </property>
+  </property>
+  <property name="desktop-icons" type="empty">
+    <property name="icon-size" type="uint" value="48"/>
+    <property name="file-icons" type="empty">
+      <property name="show-home" type="bool" value="false"/>
+      <property name="show-filesystem" type="bool" value="false"/>
+      <property name="show-trash" type="bool" value="false"/>
+      <property name="show-removable" type="bool" value="false"/>
+      <property name="migrated-4.19" type="array">
+        <value type="string" value="96a8902039c8d735dac0f265a2fcfefbea37bcdc"/>
+      </property>
+    </property>
+    <property name="single-click" type="bool" value="false"/>
+    <property name="use-custom-font-size" type="bool" value="true"/>
+    <property name="font-size" type="double" value="10"/>
+    <property name="show-tooltips" type="bool" value="false"/>
+  </property>
+  <property name="last-settings-migration-version" type="uint" value="1"/>
+  <property name="last" type="empty">
+    <property name="window-width" type="int" value="735"/>
+    <property name="window-height" type="int" value="537"/>
+  </property>
+  <property name="windowlist-menu" type="empty">
+    <property name="show-icons" type="bool" value="true"/>
+  </property>
+  <property name="desktop-menu" type="empty">
+    <property name="show" type="bool" value="false"/>
+  </property>
+</channel>

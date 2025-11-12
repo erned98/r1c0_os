@@ -1,0 +1,15 @@
+{
+    "brave": {
+        "ai_chat": { "autocomplete_provider_enabled": false, "context_menu_enabled": false, "show_toolbar_button": false },
+        "brave_ads": { "should_allow_ads_subdivision_targeting": false },
+        "new_tab_page": { "show_background_image": true, "show_branded_background_image": false, "show_brave_news": false, "show_clock": false, "show_rewards": false, "show_stats": true, "show_together": false },
+        "rewards": { "badge_text": "", "show_brave_rewards_button_in_location_bar": false },
+        "today": { "should_show_toolbar_button": false },
+        "tabs": { "hover_mode": 2 },
+        "wallet": { "show_wallet_icon_on_toolbar": false }
+    },
+    "extensions": {
+        "theme": { "id": "", "system_theme": 1 }
+    }
+}
+
