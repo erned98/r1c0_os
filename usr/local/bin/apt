@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Commands that should use the original /usr/bin/apt instead of nala
+USE_APT_CMDS=("edit-sources" "cdrom" "source" "moo" "policy")
+
+# If the first argument matches one of the exceptions, use /usr/bin/apt
+if [[ " ${USE_APT_CMDS[*]} " == *" $1 "* ]]; then
+  exec /usr/bin/apt "$@"
+else
+  # Otherwise, delegate to nala
+  exec nala "$@"
+fi
+
