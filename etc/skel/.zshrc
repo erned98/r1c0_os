@@ -65,8 +65,12 @@ alias cal='cal -m'
 # 
 
 # Enable colours
-command -v eza > /dev/null && alias ls='eza -lah --group-directories-first'
-command -v eza > /dev/null && alias tree='lsd --tree'
+if [[ $(tty) =~ /dev/pts ]]; then
+	command -v eza > /dev/null && alias ls='eza -lah --group-directories-first --icons=auto'
+else
+	command -v eza > /dev/null && alias ls='eza -lah --group-directories-first'
+fi
+
 alias cat='batcat --theme=ansi --pager=never -p'
 
 export LESS_TERMCAP_mb=$'\e[1;32m'
