@@ -44,7 +44,7 @@ alias ping='ping -c 20'
 alias stf1='starship explain'
 
 ## For the memes
-alias fetch='echo && fastfetch -l none'
+alias fetch='echo && fastfetch'
 alias hello="notify-send 'Oh, hi! Nice to see you!' 'Remember to take regular breaks and drink water!' -i tux"
 alias pls='sudo $(fc -ln -1)'
 

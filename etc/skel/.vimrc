@@ -1,12 +1,12 @@
-                                    
-" 
+
+"
 " ██╗   ██╗██╗███╗   ███╗
 " ██║   ██║██║████╗ ████║
 " ██║   ██║██║██╔████╔██║
 " ╚██╗ ██╔╝██║██║╚██╔╝██║
 "  ╚████╔╝ ██║██║ ╚═╝ ██║
 "   ╚═══╝  ╚═╝╚═╝     ╚═╝
-                       
+
 " All system-wide defaults are set in $VIMRUNTIME/archlinux.vim (usually just
 " /usr/share/vim/vimfiles/archlinux.vim) and sourced by the call to :runtime
 " you can find below.  If you wish to change any of those settings, you should
@@ -112,20 +112,44 @@ set wrap linebreak
 set statusline=
 
 " Status line left side.
-set statusline+=\ %F\ %m\ (%Y)\ %R
-
-" Use a divider to separate the left side from the right side.
-set statusline+=%=
-
-" Status line right side.
-set statusline+=\ %l,%c\ %p%%\  
+" set statusline+=\ %F\ %m\ (%Y)\ %R
+"
+" " Use a divider to separate the left side from the right side.
+" set statusline+=%=
+"
+" " Status line right side.
+" set statusline+=\ %l,%c\ %p%%\
 
 " Show the status on the second to last line.
-set laststatus=2
-" set laststatus=1
+" set laststatus=2
+set laststatus=1
 
 " }}}
 
 " UTF-8 encoding
 set encoding=utf-8
 set termencoding=utf-8
+
+" flat-remix airline
+let g:airline#sections#left     = ['mode']
+let g:airline#sections#middle   = ['filename']
+let g:airline#sections#right    = ['filetype', 'percent']
+
+let g:airline_theme='flat_remix_1'
+
+let g:airline_symbols = {}
+let g:airline_symbols.linenr = ' Ln '
+let g:airline_symbols.colnr  = ' Col '
+let g:airline_symbols.maxlinenr = ''
+
+let g:airline_symbols.branch = 'git:'
+
+let g:airline_symbols.filetype = ''
+let g:airline_symbols.readonly = 'RO'
+let g:airline_symbols.dirty    = '+'
+
+highlight AirlineWarning guifg=#000000 guibg=#ff8a18 ctermfg=0 ctermbg=11
+highlight WarningMsg guifg=#000000 guibg=#ff8a18 ctermfg=0 ctermbg=11
+
+let g:airline#extensions#whitespace#mixed_indent_algo = 2
+let g:airline#extensions#whitespace#enabled = 0

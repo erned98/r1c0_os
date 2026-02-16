@@ -48,8 +48,8 @@
       <property name="&lt;Super&gt;r" type="string" value="xfce4-appfinder --collapsed"/>
       <property name="&lt;Super&gt;e" type="string" value="thunar"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;m" type="string" value="magnus"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="string" value="kitty"/>
-      <property name="&lt;Primary&gt;&lt;Shift&gt;Escape" type="string" value="kitty -e htop"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="string" value="exo-open --launch TerminalEmulator"/>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;Escape" type="string" value="alacritty -T &quot;htop&quot; -e htop "/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

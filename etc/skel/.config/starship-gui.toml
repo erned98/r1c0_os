@@ -23,7 +23,7 @@ right_format = """
 $sudo\
 $all\
 $status\
-$cmd_duration
+$cmd_duration\
 """
 
 # right_format = """$status\
@@ -39,62 +39,46 @@ format = '[$user]($style) in '
 
 [character]
 format = "$symbol "
-success_symbol = '[\$](green)'
-error_symbol = '[\$](bold red)'
+success_symbol = '[\$](bold bright-green)'
+error_symbol = '[\$](bold bright-red)'
 
 [directory]
-style = 'bright-cyan'
-truncation_length = 1
+style = 'bold cyan'
+truncation_length = 3
 truncation_symbol = '../'
 truncate_to_repo = true
 read_only = ' [ro]'
 read_only_style = 'bold yellow'
 home_symbol = '~'
 repo_root_format = '[$path]($style)[$read_only]($read_only_style)'
-# home_symbol = ' '
-# fish_style_pwd_dir_length = 1
-
-# [directory.substitutions]
-# ' /.config' = ' '
-# ' /Desktop' = ' '
-# ' /Documents' = ' '
-# ' /Downloads' = ' '
-# ' /Galaxy' = ' '
-# ' /Music' = ' '
-# ' /Pictures' = ' '
-# ' /Public' = ' '
-# ' /Scripts' = ' '
-# ' /Templates' = ' '
-# ' /Videos' = ' '
-# ' /Wallpapers' = ' '
 
 [fill]
 disabled = false
 symbol = ' '
 
 [cmd_duration]
-min_time = 500
-format = '\[took [$duration](bold yellow)\]' 
+min_time = 2000
+format = '\[[$duration](bold yellow)\]' 
 
 [sudo]
 disabled = false
 symbol = 'sudo' 
 format = '\[[$symbol]($style)\]'
-style = 'yellow'
+style = 'bold yellow'
 
 [jobs]
-format = '\[[$symbol$number]($style)\]'
-style = "bold yellow"
-symbol = "+"
+format = '\[[$symbol]($style)$number\]'
+style = "white"
+symbol = "[+](yellow bold)"
 
 [battery]
-format = '\[$symbol [$percentage]($style) '
-full_symbol = "batt"
-charging_symbol = "[char](green)"
-discharging_symbol = "batt"
-unknown_symbol = "batt ?"
-empty_symbol = "batt !"
 disabled = true
+format = '\[$symbol [$percentage]($style)'
+full_symbol = "bat"
+charging_symbol = "[chr](green)"
+discharging_symbol = "bat"
+unknown_symbol = "bat ?"
+empty_symbol = "bat !"
 
 [[battery.display]]
 threshold = 25
@@ -145,12 +129,6 @@ format = '\[$symbol [$version]($style)\]'
 style = "bold blue"
 detect_extensions = ['c', 'h']
 
-# [cpp]
-# symbol = "cpp"
-# format = '\[$symbol [$version]($style)\]'
-# style = "bold blue"
-# detect_extensions = ['cpp', 'cc', 'cxx', 'c++', 'hpp', 'hh', 'hxx', 'h++', 'tcc']
-
 [cmake]
 symbol = "cmk"
 format = '\[$symbol [$version]($style)\]'
@@ -168,7 +146,7 @@ detect_env_vars = ["!PIXI_ENVIRONMENT_NAME"]
 [crystal]
 symbol = "cr"
 format = '\[$symbol [$version]($style)\]'
-style = "bold bright-black"
+style = "bold black"
 detect_extensions = ['cr']
 detect_files = ['shard.yml']
 
@@ -224,7 +202,7 @@ commit_hash_length = 3
 
 [git_status]
 style = 'bold yellow'
-format = '([\[$all_status$ahead_behind\]]($style) )'
+format = '([ \[$all_status$ahead_behind\]]($style) )'
 conflicted = "="
 ahead = ">"
 behind = "<"
@@ -273,12 +251,12 @@ style = "bold yellow"
 ssh_symbol = "ssh"
 format = "[$ssh_symbol $hostname]($style) in"
 ssh_only = true
-style = "bold bright-cyan"
+style = "bold cyan"
 
 [java]
 symbol = "java"
 format = '\[$symbol [$version]($style)\]'
-style = "bold bright-red"
+style = "bold red"
 detect_extensions = ['java', 'class', 'gradle', 'jar', 'cljs', 'cljc']
 detect_files = ['pom.xml', 'build.gradle.kts', 'build.sbt', '.java-version', 'deps.edn', 'project.clj', 'build.boot', '.sdkmanrc']
 
@@ -308,8 +286,8 @@ lua_binary = 'lua'
 [memory_usage]
 disabled = false
 symbol = "mem"
-format = '\[[\(!\)](bold yellow)  $symbol  [ram ${ram_pct} | swp ${swap_pct}]($style)\]'
-style = "bold bright-red"
+format = '\[[ram ${ram_pct} | swp ${swap_pct}]($style)\]'
+style = "bold red"
 threshold = 75
 
 [meson]
@@ -399,7 +377,7 @@ detect_variables = ['RUBY_VERSION', 'RBENV_VERSION']
 [rust]
 symbol = "rs"
 format = '\[$symbol [$version]($style)\]'
-style = "bold bright-red"
+style = "bold red"
 detect_extensions = ['rs']
 detect_files = ['Cargo.toml']
 

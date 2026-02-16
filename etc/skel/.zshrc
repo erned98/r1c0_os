@@ -58,6 +58,13 @@ export DIFFPROG="colordiff"
 # Set the right locale for cal
 alias cal='cal -m'
 
+# i'm in alacritty, show me my current directory!
+if [[ $TERM == "xterm-256color" ]]; then
+	precmd() {
+  		print -Pn "\e]0;%n@%m: %~\a"
+	}
+fi
+
 # 
 # ┌─┐┌─┐┌─┐┌┬┐┬ ┬┌─┐┌┬┐┬┌─┐┌─┐
 # ├─┤├┤ └─┐ │ ├─┤├┤  │ ││  └─┐

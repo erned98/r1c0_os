@@ -1,0 +1,106 @@
+# =========================
+# General
+# =========================
+[env]
+TERM = "xterm-256color"
+
+# =========================
+# Fonts
+# =========================
+[font]
+size = 11.25
+
+[font.normal]
+family = "BlexMono Nerd Font"
+style = "Text"
+
+[font.italic]
+family = "BlexMono Nerd Font"
+style = "Text Italic"
+
+[font.offset]
+y = 1
+
+# =========================
+# Window
+# =========================
+[window]
+dimensions = { columns = 95, lines = 25 }
+padding = { x = 14, y = 14 }
+dynamic_padding = false
+decorations = "full"
+opacity = 0.95
+
+# =========================
+# Cursor
+# =========================
+[cursor]
+style = { shape = "Underline", blinking = "Always" }
+blink_interval = 250
+unfocused_hollow = true
+
+# =========================
+# Scrolling
+# =========================
+[scrolling]
+history = 2000
+multiplier = 3
+
+# =========================
+# Selection / Clipboard
+# =========================
+[selection]
+save_to_clipboard = true
+
+# =========================
+# Colors – Flat Remix (from kitty)
+# =========================
+[colors.primary]
+background = "#1c1d24"
+foreground = "#ffffff"
+
+[colors.cursor]
+cursor = "#ffffff"
+text = "#000000"
+
+[colors.selection]
+background = "#ffffff"
+text = "#000000"
+
+[colors.normal]
+black   = "#030303"
+red     = "#d41919"
+green   = "#5ebdab"
+yellow  = "#fea44c"
+blue    = "#367bf0"
+magenta = "#9855b3"
+cyan    = "#49aee6"
+white   = "#e6e6e6"
+
+[colors.bright]
+black   = "#198388"
+red     = "#ec0101"
+green   = "#47d4b9"
+yellow  = "#ff8a18"
+blue    = "#277fff"
+magenta = "#962ac3"
+cyan    = "#05a1f7"
+white   = "#ffffff"
+
+# =========================
+# Key bindings
+# =========================
+[keyboard]
+bindings = [
+	{ key = "Minus", mods = "Control", action = "DecreaseFontSize" },
+	{ key = "Equals", mods = "Control", action = "IncreaseFontSize" },
+	{ key = "Key0", mods = "Control", action = "ResetFontSize" },
+	{ key = "N", mods = "Control|Shift", action = "CreateNewWindow" },
+	{ key = "Up", mods = "Control|Shift", action = "ScrollLineUp" },
+	{ key = "Down", mods = "Control|Shift", action = "ScrollLineDown" },
+	{ key = "PageUp", mods = "Control|Shift", action = "ScrollHalfPageUp" },
+	{ key = "PageDown", mods = "Control|Shift", action = "ScrollHalfPageDown" },
+	{ key = "Home", mods = "Control|Shift", action = "ScrollToTop" },
+	{ key = "End", mods = "Control|Shift", action = "ScrollToBottom" }
+]
+

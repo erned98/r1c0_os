@@ -11,6 +11,13 @@ configs:
       y: 0
       width: 1920
       height: 1080
+  - id: "9350ccd8d9958b1ffad4ce8875f697aa0e8192f4"
+    display_name: "BOE 0x0802 (eDP-1)"
+    geometry:
+      x: 0
+      y: 0
+      width: 1920
+      height: 1080
   icons:
     "/home/demo/Desktop/Help.desktop":
       row: 0
