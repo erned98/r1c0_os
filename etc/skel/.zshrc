@@ -113,10 +113,14 @@ eval "$(starship init zsh)"
 
 # Start with a colourscript and a fortune cookie
 export FORTUNE=$(fortune -s)
-if [[ $TERM == "xterm-kitty" || $TERM =~ "256color" ]]; then
-    echo -e "\n\e[3m${FORTUNE}"
-else 
-    echo -e "\n${FORTUNE}"
+if [[ $(whoami) == "demo" ]]; then
+	echo -e "\n\e[3m\e[1mWelcome to R1C0_OS!\e[0m \e[3mYou're in the live mode. For running an installer, type 'minstall-launcher' and press Enter.\e[0m" | fold -s -w $(tput cols)
+else
+	if [[ $TERM == "xterm-kitty" || $TERM =~ "256color" ]]; then
+		echo -e "\n\e[3m${FORTUNE}" | fold -s -w $(tput cols)
+	else 
+		echo -e "\n${FORTUNE}" | fold -s -w $(tput cols)
+	fi
 fi
 
 # 
