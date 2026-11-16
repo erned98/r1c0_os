@@ -8,7 +8,7 @@ TERM = "xterm-256color"
 # Fonts
 # =========================
 [font]
-size = 11.25
+size = 11
 
 [font.normal]
 family = "BlexMono Nerd Font"
