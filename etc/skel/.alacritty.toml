@@ -11,12 +11,12 @@ TERM = "xterm-256color"
 size = 11
 
 [font.normal]
-family = "BlexMono Nerd Font"
-style = "Text"
+family = "AdwaitaMono Nerd Font"
+style = "Regular"
 
 [font.italic]
-family = "BlexMono Nerd Font"
-style = "Text Italic"
+family = "AdwaitaMono Nerd Font"
+style = "Italic"
 
 [font.offset]
 y = 1
