@@ -65,9 +65,6 @@
       </property>
       <property name="known-legacy-items" type="array">
         <value type="string" value="no network connection"/>
-        <value type="string" value="wi-fi network connection “upc5809116_ext” active: upc5809116_ext (60%)"/>
-        <value type="string" value="wi-fi network connection “upc5809116_ext” active: upc5809116_ext (57%)"/>
-        <value type="string" value="wi-fi network connection “upc5809116_ext” active: upc5809116_ext (62%)"/>
         <value type="string" value="mx-usb-unmounter"/>
         <value type="string" value="networkmanager applet"/>
         <value type="string" value="clipman"/>
@@ -123,7 +120,7 @@
       <property name="command" type="string" value=""/>
       <property name="digital-layout" type="uint" value="3"/>
       <property name="digital-time-format" type="string" value="%H:%M"/>
-      <property name="digital-time-font" type="string" value="IBM Plex Sans Bold 11"/>
+      <property name="digital-time-font" type="string" value="Adwaita Sans Bold 10.5"/>
     </property>
     <property name="plugin-2" type="string" value="docklike"/>
     <property name="plugin-5" type="string" value="pulseaudio">
